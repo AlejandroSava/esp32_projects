@@ -9,3 +9,7 @@ The goal is to build a structured learning and experimentation hub covering **em
 
 Each folder corresponds to an independent project or example:
 
+---
+## How to create a project from scratch
+idf.py create project NAME_PROJECT
+idf.py set-target esp32
