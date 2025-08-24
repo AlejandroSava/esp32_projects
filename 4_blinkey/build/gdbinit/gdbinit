@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/4_blinkey/build/gdbinit/symbols
+source /home/alejandro/esp32_projects/4_blinkey/build/gdbinit/connect

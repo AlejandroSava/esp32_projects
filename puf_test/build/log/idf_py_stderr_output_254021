@@ -1,0 +1,76 @@
+Command: ninja all
+CMake Error at /home/alejandro/esp/esp-idf/tools/cmake/component.cmake:229 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  /home/alejandro/esp32_projects/puf_test/main/CMakeLists.txt:1:
+
+    Syntax Warning in cmake code at column 53
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  /home/alejandro/esp32_projects/puf_test/main/CMakeLists.txt:2:
+
+    Syntax Warning in cmake code at column 35
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  /home/alejandro/esp32_projects/puf_test/main/CMakeLists.txt:2:
+
+    Parse error.  Function missing ending ")".  Instead found unterminated
+    string with text ")".
+
+  Call Stack (most recent call first):
+
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /home/alejandro/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  /home/alejandro/esp/esp-idf/tools/cmake/build.cmake:684 (__component_get_requirements)
+  /home/alejandro/esp/esp-idf/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

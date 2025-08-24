@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "puf_test",
-    "project_version":    "8045056-dirty",
+    "project_version":    "8bab072-dirty",
     "project_path":       "/home/alejandro/esp32_projects/puf_test",
     "idf_path":           "/home/alejandro/esp/esp-idf",
     "build_dir":          "/home/alejandro/esp32_projects/puf_test/build",
@@ -1270,7 +1270,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/alejandro/esp32_projects/puf_test/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/alejandro/esp32_projects/puf_test/main/puf_test.c" ],
+            "sources": [ "/home/alejandro/esp32_projects/puf_test/main/puf_test.c", "/home/alejandro/esp32_projects/puf_test/main/wake_stub.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/2_delays/build/bootloader/gdbinit/symbols
+source /home/alejandro/esp32_projects/2_delays/build/bootloader/gdbinit/connect

@@ -1,0 +1,777 @@
+Command: /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/alejandro/esp32_projects/3_random_numer/build/3_random_numer.elf /home/alejandro/esp32_projects/3_random_numer/build/bootloader/bootloader.elf -m '/home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/alejandro/esp/esp-idf/tools/idf.py'
+n:
+[0;32mI (225) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 24 2025 12:18:08[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095d4h ( 38356) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=000195fc vaddr=3ffb0000 size=025e4h (  9700) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bbe8 vaddr=40080000 size=04430h ( 17456) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0eec4h ( 61124) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=0002eeec vaddr=40084430 size=08bach ( 35756) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00037aa0 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     3_random_numer[0m
+[0;32mI (188) app_init: App version:      8bab072-dirty[0m
+[0;32mI (192) app_init: Compile time:     Aug 24 2025 12:17:58[0m
+[0;32mI (197) app_init: ELF file SHA256:  00289535c...[0m
+[0;32mI (201) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFB2EB0 len 0002D150 (180 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 4008CFDC len 00013024 (76 KiB): IRAM[0m
+[0;32mI (253) spi_flash: detected chip: generic[0m
+[0;32mI (255) spi_flash: flash io: dio[0m
+[0;33mW (258) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (271) main_task: Started on CPU0[0m
+[0;32mI (281) main_task: Calling app_main()[0m
+[0;32mI (1281) DICE: random number 350315732[0m
+
+[0;32mI (2281) DICE: random number -1267300465[0m
+
+[0;32mI (3281) DICE: random number 1907142493[0m
+
+[0;32mI (4281) DICE: random number 1517838369[0m
+
+[0;32mI (5281) DICE: random number -260456220[0m
+
+[0;32mI (6281) DICE: random number -29550726[0m
+
+[0;32mI (7281) DICE: random number -107181359[0m
+
+[0;32mI (8281) DICE: random number 389589081[0m
+
+[0;32mI (9281) DICE: random number -1600428617[0m
+
+[0;32mI (10281) DICE: random number 1279572728[0m
+
+[0;32mI (11281) DICE: random number 322798014[0m
+
+[0;32mI (12281) DICE: random number -1162897094[0m
+
+[0;32mI (13281) DICE: random number 170611756[0m
+
+[0;32mI (14281) DICE: random number 1994267244[0m
+
+[0;32mI (15281) DICE: random number 699827244[0m
+
+[0;32mI (16281) DICE: random number 333893871[0m
+
+[0;32mI (17281) DICE: random number -4922114[0m
+
+[0;32mI (18281) DICE: random number -1804987534[0m
+
+[0;32mI (19281) DICE: random number -1853758352[0m
+
+[0;32mI (20281) DICE: random number -532668690[0m
+
+[0;32mI (21281) DICE: random number -1134080530[0m
+
+[0;32mI (22281) DICE: random number -352955003[0m
+
+[0;32mI (23281) DICE: random number 980602583[0m
+
+[0;32mI (24281) DICE: random number 1840470201[0m
+
+[0;32mI (25281) DICE: random number 1681414234[0m
+
+[0;32mI (26281) DICE: random number -1504562915[0m
+
+[0;32mI (27281) DICE: random number 275293831[0m
+
+[0;32mI (28281) DICE: random number 31728609[0m
+
+[0;32mI (29281) DICE: random number -124492406[0m
+
+[0;32mI (30281) DICE: random number 2083023900[0m
+
+[0;32mI (31281) DICE: random number -475993269[0m
+
+[0;32mI (32281) DICE: random number -1941788457[0m
+
+[0;32mI (33281) DICE: random number -1323141116[0m
+
+[0;32mI (34281) DICE: random number -1712162349[0m
+
+[0;32mI (35281) DICE: random number 38319227[0m
+
+[0;32mI (36281) DICE: random number 1465789388[0m
+
+[0;32mI (37281) DICE: random number 1199629432[0m
+
+[0;32mI (38281) DICE: random number -1802261808[0m
+
+[0;32mI (39281) DICE: random number 1005397596[0m
+
+[0;32mI (40281) DICE: random number 1052308057[0m
+
+[0;32mI (41281) DICE: random number -1834765015[0m
+
+[0;32mI (42281) DICE: random number 1121025814[0m
+
+[0;32mI (43281) DICE: random number -49303485[0m
+
+[0;32mI (44281) DICE: random number 418014778[0m
+
+[0;32mI (45281) DICE: random number 261997026[0m
+
+[0;32mI (46281) DICE: random number 558764374[0m
+
+[0;32mI (47281) DICE: random number 1031534865[0m
+
+[0;32mI (48281) DICE: random number -940532981[0m
+
+[0;32mI (49281) DICE: random number -469163918[0m
+
+[0;32mI (50281) DICE: random number 1772527326[0m
+
+[0;32mI (51281) DICE: random number 1108291529[0m
+
+[0;32mI (52281) DICE: random number 1021198395[0m
+
+[0;32mI (53281) DICE: random number -1432208370[0m
+
+[0;32mI (54281) DICE: random number 233821207[0m
+
+[0;32mI (55281) DICE: random number -137993282[0m
+
+[0;32mI (56281) DICE: random number 1649952909[0m
+
+[0;32mI (57281) DICE: random number -86659766[0m
+
+[0;32mI (58281) DICE: random number -759350537[0m
+
+[0;32mI (59281) DICE: random number 1997202952[0m
+
+[0;32mI (60281) DICE: random number -1934225971[0m
+
+[0;32mI (61281) DICE: random number -2026881314[0m
+
+[0;32mI (62281) DICE: random number 1518255823[0m
+
+[0;32mI (63281) DICE: random number -1819354099[0m
+
+[0;32mI (64281) DICE: random number -585650052[0m
+
+[0;32mI (65281) DICE: random number -1285204661[0m
+
+[0;32mI (66281) DICE: random number 380254843[0m
+
+[0;32mI (67281) DICE: random number -507954297[0m
+
+[0;32mI (68281) DICE: random number 1581347693[0m
+
+[0;32mI (69281) DICE: random number 42003076[0m
+
+[0;32mI (70281) DICE: random number -769815995[0m
+
+[0;32mI (71281) DICE: random number 278710584[0m
+
+[0;32mI (72281) DICE: random number -883091294[0m
+
+[0;32mI (73281) DICE: random number 1727282527[0m
+
+[0;32mI (74281) DICE: random number -1871826858[0m
+
+[0;32mI (75281) DICE: random number -1774009397[0m
+
+[0;32mI (76281) DICE: random number -1864310594[0m
+
+[0;32mI (77281) DICE: random number 1179223756[0m
+
+[0;32mI (78281) DICE: random number -307792541[0m
+
+[0;32mI (79281) DICE: random number 520538694[0m
+
+[0;32mI (80281) DICE: random number -595242740[0m
+
+[0;32mI (81281) DICE: random number 2134263256[0m
+
+[0;32mI (82281) DICE: random number 2137335277[0m
+
+[0;32mI (83281) DICE: random number 230733412[0m
+
+[0;32mI (84281) DICE: random number 126759983[0m
+
+[0;32mI (85281) DICE: random number 1354085285[0m
+
+[0;32mI (86281) DICE: random number 2022801053[0m
+
+[0;32mI (87281) DICE: random number 1805419231[0m
+
+[0;32mI (88281) DICE: random number -272618015[0m
+
+[0;32mI (89281) DICE: random number -163092548[0m
+
+[0;32mI (90281) DICE: random number -472520384[0m
+
+[0;32mI (91281) DICE: random number 1230734620[0m
+
+[0;32mI (92281) DICE: random number 717666624[0m
+
+[0;32mI (93281) DICE: random number -907283415[0m
+
+[0;32mI (94281) DICE: random number -832879982[0m
+
+[0;32mI (95281) DICE: random number 1071952095[0m
+
+[0;32mI (96281) DICE: random number 507577622[0m
+
+[0;32mI (97281) DICE: random number -1831862270[0m
+
+[0;32mI (98281) DICE: random number -893546586[0m
+
+[0;32mI (99281) DICE: random number -1547207231[0m
+
+[0;32mI (100281) DICE: random number 474871644[0m
+
+[0;32mI (101281) DICE: random number 1241373760[0m
+
+[0;32mI (102281) DICE: random number -705053860[0m
+
+[0;32mI (103281) DICE: random number 1665956664[0m
+
+[0;32mI (104281) DICE: random number 190207677[0m
+
+[0;32mI (105281) DICE: random number 1943712676[0m
+
+[0;32mI (106281) DICE: random number -355286855[0m
+
+[0;32mI (107281) DICE: random number -2075938356[0m
+
+[0;32mI (108281) DICE: random number 307825564[0m
+
+[0;32mI (109281) DICE: random number -632854538[0m
+
+[0;32mI (110281) DICE: random number -1964602573[0m
+
+[0;32mI (111281) DICE: random number 1659067670[0m
+
+[0;32mI (112281) DICE: random number 229820774[0m
+
+[0;32mI (113281) DICE: random number -1745601381[0m
+
+[0;32mI (114281) DICE: random number 1205074406[0m
+
+[0;32mI (115281) DICE: random number -1239090761[0m
+
+[0;32mI (116281) DICE: random number -1903450834[0m
+
+[0;32mI (117281) DICE: random number -997192694[0m
+
+[0;32mI (118281) DICE: random number 1961611391[0m
+
+[0;32mI (119281) DICE: random number 1116441091[0m
+
+[0;32mI (120281) DICE: random number 1376189619[0m
+
+[0;32mI (121281) DICE: random number 429044239[0m
+
+[0;32mI (122281) DICE: random number -1305641924[0m
+
+[0;32mI (123281) DICE: random number -1616641645[0m
+
+[0;32mI (124281) DICE: random number 810485961[0m
+
+[0;32mI (125281) DICE: random number -1292117408[0m
+
+[0;32mI (126281) DICE: random number 205744358[0m
+
+[0;32mI (127281) DICE: random number -742950196[0m
+
+[0;32mI (128281) DICE: random number -1548855054[0m
+
+[0;32mI (129281) DICE: random number -343447381[0m
+
+[0;32mI (130281) DICE: random number -1728501873[0m
+
+[0;32mI (131281) DICE: random number 2102381099[0m
+
+[0;32mI (132281) DICE: random number 2079167962[0m
+
+[0;32mI (133281) DICE: random number -1955112133[0m
+
+[0;32mI (134281) DICE: random number -1644188271[0m
+
+[0;32mI (135281) DICE: random number 1946448388[0m
+
+[0;32mI (136281) DICE: random number 299738763[0m
+
+[0;32mI (137281) DICE: random number -58706872[0m
+
+[0;32mI (138281) DICE: random number -2117103874[0m
+
+[0;32mI (139281) DICE: random number -74646980[0m
+
+[0;32mI (140281) DICE: random number -88394697[0m
+
+[0;32mI (141281) DICE: random number 538961477[0m
+
+[0;32mI (142281) DICE: random number 219379964[0m
+
+[0;32mI (143281) DICE: random number 1252164794[0m
+
+[0;32mI (144281) DICE: random number -1782252941[0m
+
+[0;32mI (145281) DICE: random number -146367291[0m
+
+[0;32mI (146281) DICE: random number -1219196887[0m
+
+[0;32mI (147281) DICE: random number -1875655213[0m
+
+[0;32mI (148281) DICE: random number -1484092532[0m
+
+[0;32mI (149281) DICE: random number -1884121749[0m
+
+[0;32mI (150281) DICE: random number -59009427[0m
+
+[0;32mI (151281) DICE: random number -932059052[0m
+
+[0;32mI (152281) DICE: random number -2049471336[0m
+
+[0;32mI (153281) DICE: random number 1790900717[0m
+
+[0;32mI (154281) DICE: random number 579672306[0m
+
+[0;32mI (155281) DICE: random number 649729310[0m
+
+[0;32mI (156281) DICE: random number 1673684824[0m
+
+[0;32mI (157281) DICE: random number 1790579424[0m
+
+[0;32mI (158281) DICE: random number 1385235099[0m
+
+[0;32mI (159281) DICE: random number 50172910[0m
+
+[0;32mI (160281) DICE: random number 818039755[0m
+
+[0;32mI (161281) DICE: random number 846231266[0m
+
+[0;32mI (162281) DICE: random number -662311700[0m
+
+[0;32mI (163281) DICE: random number 669466242[0m
+
+[0;32mI (164281) DICE: random number -1867606334[0m
+
+[0;32mI (165281) DICE: random number -1004598594[0m
+
+[0;32mI (166281) DICE: random number -1062787374[0m
+
+[0;32mI (167281) DICE: random number -1050581856[0m
+
+[0;32mI (168281) DICE: random number -1368215006[0m
+
+[0;32mI (169281) DICE: random number 547418053[0m
+
+[0;32mI (170281) DICE: random number 2071724215[0m
+
+[0;32mI (171281) DICE: random number -63020161[0m
+
+[0;32mI (172281) DICE: random number -1023557630[0m
+
+[0;32mI (173281) DICE: random number -823711322[0m
+
+[0;32mI (174281) DICE: random number -678604689[0m
+
+[0;32mI (175281) DICE: random number 423122845[0m
+
+[0;32mI (176281) DICE: random number 1812930873[0m
+
+[0;32mI (177281) DICE: random number 1805723212[0m
+
+[0;32mI (178281) DICE: random number 1164961082[0m
+
+[0;32mI (179281) DICE: random number -1366765658[0m
+
+[0;32mI (180281) DICE: random number -1138812787[0m
+
+[0;32mI (181281) DICE: random number -1963944580[0m
+
+[0;32mI (182281) DICE: random number -1794186218[0m
+
+[0;32mI (183281) DICE: random number -157568745[0m
+
+[0;32mI (184281) DICE: random number 725162379[0m
+
+[0;32mI (185281) DICE: random number -1856983888[0m
+
+[0;32mI (186281) DICE: random number 997580653[0m
+
+[0;32mI (187281) DICE: random number -1012215826[0m
+
+[0;32mI (188281) DICE: random number 492722117[0m
+
+[0;32mI (189281) DICE: random number -33522288[0m
+
+[0;32mI (190281) DICE: random number -1515189255[0m
+
+[0;32mI (191281) DICE: random number 1427423072[0m
+
+[0;32mI (192281) DICE: random number -1036686998[0m
+
+[0;32mI (193281) DICE: random number -1810253485[0m
+
+[0;32mI (194281) DICE: random number -1261843371[0m
+
+[0;32mI (195281) DICE: random number -1475087726[0m
+
+[0;32mI (196281) DICE: random number 1360468081[0m
+
+[0;32mI (197281) DICE: random number 554671286[0m
+
+[0;32mI (198281) DICE: random number 1952162347[0m
+
+[0;32mI (199281) DICE: random number 424688795[0m
+
+[0;32mI (200281) DICE: random number 1241975757[0m
+
+[0;32mI (201281) DICE: random number -743227494[0m
+
+[0;32mI (202281) DICE: random number -490825970[0m
+
+[0;32mI (203281) DICE: random number -799639922[0m
+
+[0;32mI (204281) DICE: random number 801252827[0m
+
+[0;32mI (205281) DICE: random number 1541890104[0m
+
+[0;32mI (206281) DICE: random number -1925944110[0m
+
+[0;32mI (207281) DICE: random number 1158933818[0m
+
+[0;32mI (208281) DICE: random number -558366063[0m
+
+[0;32mI (209281) DICE: random number 2138119913[0m
+
+[0;32mI (210281) DICE: random number -986365106[0m
+
+[0;32mI (211281) DICE: random number 2011362204[0m
+
+[0;32mI (212281) DICE: random number -1658368458[0m
+
+[0;32mI (213281) DICE: random number -2046034269[0m
+
+[0;32mI (214281) DICE: random number -852468246[0m
+
+[0;32mI (215281) DICE: random number -1891582936[0m
+
+[0;32mI (216281) DICE: random number -1761989538[0m
+
+[0;32mI (217281) DICE: random number -773233253[0m
+
+[0;32mI (218281) DICE: random number 709784261[0m
+
+[0;32mI (219281) DICE: random number 1944639407[0m
+
+[0;32mI (220281) DICE: random number -1141908173[0m
+
+[0;32mI (221281) DICE: random number -1253330779[0m
+
+[0;32mI (222281) DICE: random number -2112787382[0m
+
+[0;32mI (223281) DICE: random number 417354093[0m
+
+[0;32mI (224281) DICE: random number -1931970997[0m
+
+[0;32mI (225281) DICE: random number 995067447[0m
+
+[0;32mI (226281) DICE: random number -6661337[0m
+
+[0;32mI (227281) DICE: random number -1364971030[0m
+
+[0;32mI (228281) DICE: random number -1158194514[0m
+
+[0;32mI (229281) DICE: random number 1850345443[0m
+
+[0;32mI (230281) DICE: random number -1789523432[0m
+
+[0;32mI (231281) DICE: random number -1658854249[0m
+
+[0;32mI (232281) DICE: random number 757971320[0m
+
+[0;32mI (233281) DICE: random number -566573888[0m
+
+[0;32mI (234281) DICE: random number -346749751[0m
+
+[0;32mI (235281) DICE: random number 248522711[0m
+
+[0;32mI (236281) DICE: random number 945324062[0m
+
+[0;32mI (237281) DICE: random number -1575262761[0m
+
+[0;32mI (238281) DICE: random number 1800077784[0m
+
+[0;32mI (239281) DICE: random number 2049256066[0m
+
+[0;32mI (240281) DICE: random number -1981782872[0m
+
+[0;32mI (241281) DICE: random number -787463313[0m
+
+[0;32mI (242281) DICE: random number -911889177[0m
+
+[0;32mI (243281) DICE: random number 2079568129[0m
+
+[0;32mI (244281) DICE: random number -1250501219[0m
+
+[0;32mI (245281) DICE: random number 1977588864[0m
+
+[0;32mI (246281) DICE: random number -284652439[0m
+
+[0;32mI (247281) DICE: random number -261202854[0m
+
+[0;32mI (248281) DICE: random number -567950711[0m
+
+[0;32mI (249281) DICE: random number 638234532[0m
+
+[0;32mI (250281) DICE: random number 1029203232[0m
+
+[0;32mI (251281) DICE: random number 2125622240[0m
+
+[0;32mI (252281) DICE: random number 904489239[0m
+
+[0;32mI (253281) DICE: random number -817814638[0m
+
+[0;32mI (254281) DICE: random number -463025105[0m
+
+[0;32mI (255281) DICE: random number 577342154[0m
+
+[0;32mI (256281) DICE: random number 1500387921[0m
+
+[0;32mI (257281) DICE: random number -783253196[0m
+
+[0;32mI (258281) DICE: random number -950625972[0m
+
+[0;32mI (259281) DICE: random number 724742664[0m
+
+[0;32mI (260281) DICE: random number 518375170[0m
+
+[0;32mI (261281) DICE: random number 287191242[0m
+
+[0;32mI (262281) DICE: random number -931637215[0m
+
+[0;32mI (263281) DICE: random number -1727032033[0m
+
+[0;32mI (264281) DICE: random number -1289372721[0m
+
+[0;32mI (265281) DICE: random number 1335657838[0m
+
+[0;32mI (266281) DICE: random number -137727127[0m
+
+[0;32mI (267281) DICE: random number -2144051972[0m
+
+[0;32mI (268281) DICE: random number 860158829[0m
+
+[0;32mI (269281) DICE: random number -459813082[0m
+
+[0;32mI (270281) DICE: random number -2133065517[0m
+
+[0;32mI (271281) DICE: random number 751279286[0m
+
+[0;32mI (272281) DICE: random number -1688843683[0m
+
+[0;32mI (273281) DICE: random number -707858355[0m
+
+[0;32mI (274281) DICE: random number 412395721[0m
+
+[0;32mI (275281) DICE: random number 16781550[0m
+
+[0;32mI (276281) DICE: random number -1551837008[0m
+
+[0;32mI (277281) DICE: random number 9063381[0m
+
+[0;32mI (278281) DICE: random number 271906977[0m
+
+[0;32mI (279281) DICE: random number -529143696[0m
+
+[0;32mI (280281) DICE: random number -55602613[0m
+
+[0;32mI (281281) DICE: random number -815047906[0m
+
+[0;32mI (282281) DICE: random number -2137984599[0m
+
+[0;32mI (283281) DICE: random number 1041686300[0m
+
+[0;32mI (284281) DICE: random number 1576526224[0m
+
+[0;32mI (285281) DICE: random number 496867476[0m
+
+[0;32mI (286281) DICE: random number -444897932[0m
+
+[0;32mI (287281) DICE: random number -153591732[0m
+
+[0;32mI (288281) DICE: random number 2128246230[0m
+
+[0;32mI (289281) DICE: random number 1768862510[0m
+
+[0;32mI (290281) DICE: random number -1515821067[0m
+
+[0;32mI (291281) DICE: random number -1817955168[0m
+
+[0;32mI (292281) DICE: random number -1156266965[0m
+
+[0;32mI (293281) DICE: random number 1517034302[0m
+
+[0;32mI (294281) DICE: random number 1749259440[0m
+
+[0;32mI (295281) DICE: random number 41779718[0m
+
+[0;32mI (296281) DICE: random number 434143455[0m
+
+[0;32mI (297281) DICE: random number -1002698195[0m
+
+[0;32mI (298281) DICE: random number -917822467[0m
+
+[0;32mI (299281) DICE: random number -469077933[0m
+
+[0;32mI (300281) DICE: random number 256604739[0m
+
+[0;32mI (301281) DICE: random number 262230180[0m
+
+[0;32mI (302281) DICE: random number 952221975[0m
+
+[0;32mI (303281) DICE: random number -989406579[0m
+
+[0;32mI (304281) DICE: random number -1010124374[0m
+
+[0;32mI (305281) DICE: random number 158793844[0m
+
+[0;32mI (306281) DICE: random number 728776267[0m
+
+[0;32mI (307281) DICE: random number 1067543439[0m
+
+[0;32mI (308281) DICE: random number 2099622752[0m
+
+[0;32mI (309281) DICE: random number -823428486[0m
+
+[0;32mI (310281) DICE: random number -1066389397[0m
+
+[0;32mI (311281) DICE: random number 1395730994[0m
+
+[0;32mI (312281) DICE: random number 1991541027[0m
+
+[0;32mI (313281) DICE: random number -794558167[0m
+
+[0;32mI (314281) DICE: random number 1492362913[0m
+
+[0;32mI (315281) DICE: random number 215364413[0m
+
+[0;32mI (316281) DICE: random number 1326772061[0m
+
+[0;32mI (317281) DICE: random number 1201722856[0m
+
+[0;32mI (318281) DICE: random number -663038757[0m
+
+[0;32mI (319281) DICE: random number 1033272608[0m
+
+[0;32mI (320281) DICE: random number 1454067998[0m
+
+[0;32mI (321281) DICE: random number 1551317547[0m
+
+[0;32mI (322281) DICE: random number 449675395[0m
+
+[0;32mI (323281) DICE: random number -1838428703[0m
+
+[0;32mI (324281) DICE: random number -563805730[0m
+
+[0;32mI (325281) DICE: random number -1658622744[0m
+
+[0;32mI (326281) DICE: random number -799121940[0m
+
+[0;32mI (327281) DICE: random number -867963367[0m
+
+[0;32mI (328281) DICE: random number -1780775738[0m
+
+[0;32mI (329281) DICE: random number -1407665662[0m
+
+[0;32mI (330281) DICE: random number -1799293225[0m
+
+[0;32mI (331281) DICE: random number -1908802833[0m
+
+[0;32mI (332281) DICE: random number 914966965[0m
+
+[0;32mI (333281) DICE: random number 1117202495[0m
+
+[0;32mI (334281) DICE: random number 515516527[0m
+
+[0;32mI (335281) DICE: random number 1397266916[0m
+
+[0;32mI (336281) DICE: random number -1301412619[0m
+
+[0;32mI (337281) DICE: random number 236452742[0m
+
+[0;32mI (338281) DICE: random number -1877963403[0m
+
+[0;32mI (339281) DICE: random number 912617745[0m
+
+[0;32mI (340281) DICE: random number 861176350[0m
+
+[0;32mI (341281) DICE: random number -1780187180[0m
+
+[0;32mI (342281) DICE: random number 2001099179[0m
+
+[0;32mI (343281) DICE: random number -2081630218[0m
+
+[0;32mI (344281) DICE: random number -39891789[0m
+
+[0;32mI (345281) DICE: random number 1775013906[0m
+
+[0;32mI (346281) DICE: random number 2076699940[0m
+
+[0;32mI (347281) DICE: random number -1839420919[0m
+
+[0;32mI (348281) DICE: random number 1806263479[0m
+
+[0;32mI (349281) DICE: random number 1627522559[0m
+
+[0;32mI (350281) DICE: random number 1696912301[0m
+
+[0;32mI (351281) DICE: random number 1269883470[0m
+
+[0;32mI (352281) DICE: random number 402177513[0m
+
+[0;32mI (353281) DICE: random number 1560902821[0m
+
+[0;32mI (354281) DICE: random number -1083714809[0m
+
+[0;32mI (355281) DICE: random number 1880433412[0m
+
+[0;32mI (356281) DICE: random number 994513568[0m
+
+[0;32mI (357281) DICE: random number -1295272770[0m
+
+[0;32mI (358281) DICE: random number 786117853[0m
+
+[0;32mI (359281) DICE: random number 1968985550[0m
+

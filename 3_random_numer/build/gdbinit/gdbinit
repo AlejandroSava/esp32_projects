@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/3_random_numer/build/gdbinit/symbols
+source /home/alejandro/esp32_projects/3_random_numer/build/gdbinit/connect

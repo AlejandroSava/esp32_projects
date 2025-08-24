@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "2_delays",
-    "project_version":    "8d6ced4",
+    "project_version":    "8bab072-dirty",
     "project_path":       "/home/alejandro/esp32_projects/2_delays",
     "idf_path":           "/home/alejandro/esp/esp-idf",
     "build_dir":          "/home/alejandro/esp32_projects/2_delays/build",

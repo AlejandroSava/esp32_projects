@@ -1,0 +1,127 @@
+Command: /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/alejandro/esp32_projects/2_delays/build/2_delays.elf /home/alejandro/esp32_projects/2_delays/build/bootloader/bootloader.elf -m '/home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/alejandro/esp/esp-idf/tools/idf.py'
+3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+[0;32mI (246) heap_init: At 4008CF94 len 0001306C (76 KiB): IRAM[0m
+I �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 22:29:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095c4h ( 38340) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=000195ec vaddr=3ffb0000 size=025e4h (  9700) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bbd8 vaddr=40080000 size=04440h ( 17472) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0eec4h ( 61124) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=0002eeec vaddr=40084440 size=08b54h ( 35668) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00037a48 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     2_delays[0m
+[0;32mI (187) app_init: App version:      8bab072-dirty[0m
+[0;32mI (192) app_init: Compile time:     Aug 24 2025 12:06:50[0m
+[0;32mI (197) app_init: ELF file SHA256:  df704d471...[0m
+[0;32mI (201) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2EB0 len 0002D150 (180 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 4008CF94 len 0001306C (76 KiB): IRAM[0m
+[0;32mI (252) spi_flash: detected chip: generic[0m
+[0;32mI (255) spi_flash: flash io: dio[0m
+[0;33mW (257) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (270) main_task: Started on CPU0[0m
+[0;32mI (280) main_task: Calling app_main()[0m
+[0;32mI (1280) DELAY: In loop 0[0m
+[0;32mI (2280) DELAY: In loop 1[0m
+[0;32mI (3280) DELAY: In loop 2[0m
+[0;32mI (4280) DELAY: In loop 3[0m
+[0;32mI (5280) DELAY: In loop 4[0m
+[0;32mI (6280) DELAY: In loop 5[0m
+[0;32mI (7280) DELAY: In loop 6[0m
+[0;32mI (8280) DELAY: In loop 7[0m
+[0;32mI (9280) DELAY: In loop 8[0m
+[0;32mI (10280) DELAY: In loop 9[0m
+[0;32mI (11280) DELAY: In loop 10[0m
+[0;32mI (12280) DELAY: In loop 11[0m
+[0;32mI (13280) DELAY: In loop 12[0m
+[0;32mI (14280) DELAY: In loop 13[0m
+[0;32mI (15280) DELAY: In loop 14[0m
+[0;32mI (16280) DELAY: In loop 15[0m
+[0;32mI (17280) DELAY: In loop 16[0m
+[0;32mI (18280) DELAY: In loop 17[0m
+[0;32mI (19280) DELAY: In loop 18[0m
+[0;32mI (20280) DELAY: In loop 19[0m
+[0;32mI (21280) DELAY: In loop 20[0m
+[0;32mI (22280) DELAY: In loop 21[0m
+[0;32mI (23280) DELAY: In loop 22[0m
+[0;32mI (24280) DELAY: In loop 23[0m
+[0;32mI (25280) DELAY: In loop 24[0m
+[0;32mI (26280) DELAY: In loop 25[0m
+[0;32mI (27280) DELAY: In loop 26[0m
+[0;32mI (28280) DELAY: In loop 27[0m
+[0;32mI (29280) DELAY: In loop 28[0m
+[0;32mI (30280) DELAY: In loop 29[0m
+[0;32mI (31280) DELAY: In loop 30[0m
+[0;32mI (32280) DELAY: In loop 31[0m
+[0;32mI (33280) DELAY: In loop 32[0m
+[0;32mI (34280) DELAY: In loop 33[0m
+[0;32mI (35280) DELAY: In loop 34[0m
+[0;32mI (36280) DELAY: In loop 35[0m
+[0;32mI (37280) DELAY: In loop 36[0m
+[0;32mI (38280) DELAY: In loop 37[0m
+[0;32mI (39280) DELAY: In loop 38[0m
+[0;32mI (40280) DELAY: In loop 39[0m
+[0;32mI (41280) DELAY: In loop 40[0m
+[0;32mI (42280) DELAY: In loop 41[0m
+[0;32mI (43280) DELAY: In loop 42[0m
+[0;32mI (44280) DELAY: In loop 43[0m
+[0;32mI (45280) DELAY: In loop 44[0m
+[0;32mI (46280) DELAY: In loop 45[0m
+[0;32mI (47280) DELAY: In loop 46[0m
+[0;32mI (48280) DELAY: In loop 47[0m
+[0;32mI (49280) DELAY: In loop 48[0m
+[0;32mI (50280) DELAY: In loop 49[0m
+[0;32mI (51280) DELAY: In loop 50[0m
+[0;32mI (52280) DELAY: In loop 51[0m
+[0;32mI (53280) DELAY: In loop 52[0m
+[0;32mI (54280) DELAY: In loop 53[0m
+[0;32mI (55280) DELAY: In loop 54[0m
+[0;32mI (56280) DELAY: In loop 55[0m
+[0;32mI (57280) DELAY: In loop 56[0m
+[0;32mI (58280) DELAY: In loop 57[0m
+[0;32mI (59280) DELAY: In loop 58[0m
+[0;32mI (60280) DELAY: In loop 59[0m
+[0;32mI (61280) DELAY: In loop 60[0m
+[0;32mI (62280) DELAY: In loop 61[0m
+[0;32mI (63280) DELAY: In loop 62[0m
+[0;32mI (64280) DELAY: In loop 63[0m
+[0;32mI (65280) DELAY: In loop 64[0m
+[0;32mI (66280) DELAY: In loop 65[0m
+[0;32mI (67280) DELAY: In loop 66[0m

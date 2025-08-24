@@ -1,0 +1,7 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/alejandro/esp32_projects/puf_test -B/home/alejandro/esp32_projects/puf_test/build

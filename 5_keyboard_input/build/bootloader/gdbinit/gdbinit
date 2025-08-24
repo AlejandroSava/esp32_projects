@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/5_keyboard_input/build/bootloader/gdbinit/symbols
+source /home/alejandro/esp32_projects/5_keyboard_input/build/bootloader/gdbinit/connect
