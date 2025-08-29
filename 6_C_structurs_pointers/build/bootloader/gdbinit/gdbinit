@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/6_C_structurs_pointers/build/bootloader/gdbinit/symbols
+source /home/alejandro/esp32_projects/6_C_structurs_pointers/build/bootloader/gdbinit/connect
