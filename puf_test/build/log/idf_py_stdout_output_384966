@@ -1,0 +1,119 @@
+Command: /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/alejandro/esp32_projects/puf_test/build/puf_test.elf /home/alejandro/esp32_projects/puf_test/build/bootloader/bootloader.elf -m '/home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/alejandro/esp/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 29 2025 20:46:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00050000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 00059000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00060000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00060020 vaddr=3f400020 size=0a538h ( 42296) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0006a560 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0006ce64 vaddr=40080000 size=031b4h ( 12724) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=14338h ( 82744) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00084360 vaddr=400831b4 size=0bb78h ( 47992) load[0m
+[0;32mI (164) esp_image: segment 5: paddr=0008fee0 vaddr=400c0000 size=00038h (    56) load[0m
+[0;32mI (165) esp_image: segment 6: paddr=0008ff20 vaddr=50000000 size=000a8h (   168) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x60000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) app_init: Application information:[0m
+[0;32mI (204) app_init: Project name:     puf_test[0m
+[0;32mI (208) app_init: App version:      6b334da-dirty[0m
+[0;32mI (213) app_init: Compile time:     Aug 29 2025 20:45:50[0m
+[0;32mI (218) app_init: ELF file SHA256:  4b5ce9108...[0m
+[0;32mI (222) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (228) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (246) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 3FFB4220 len 0002BDE0 (175 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (267) heap_init: At 4008ED2C len 000112D4 (68 KiB): IRAM[0m
+[0;32mI (274) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (279) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 29 2025 20:46:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00050000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 00059000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00060000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00060020 vaddr=3f400020 size=0a538h ( 42296) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0006a560 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0006ce64 vaddr=40080000 size=031b4h ( 12724) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=14338h ( 82744) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00084360 vaddr=400831b4 size=0bb78h ( 47992) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=0008fee0 vaddr=400c0000 size=00038h (    56) [0m
+[0;32mI (165) esp_image: segment 6: paddr=0008ff20 vaddr=50000000 size=000a8h (   168) [0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x60000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) app_init: Application information:[0m
+[0;32mI (204) app_init: Project name:     puf_test[0m
+[0;32mI (208) app_init: App version:      6b334da-dirty[0m
+[0;32mI (212) app_init: Compile time:     Aug 29 2025 20:45:50[0m
+[0;32mI (218) app_init: ELF file SHA256:  4b5ce9108...[0m
+[0;32mI (222) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB4220 len 0002BDE0 (175 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (267) heap_init: At 4008ED2C len 000112D4 (68 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+08 A0 73 F3 8F D2 38 6C 65 89 94 9A 46 34 16 8F 04 29 67 77 51 2A 20 85 17 E1 62 A6 A9 4A 59 82 79 90 32 51 13 83 59 D0 33 E8 92 11 6F F0 76 AA 3E 43 AD 04 D0 8B A3 21 0F 6B CE 60 E1 C5 21 FE CA 4D C6 DC 40 93 36 BB 8D 28 45 5C FE F7 A8 49 DC DC 67 F0 50 65 50 5E 4F 9A 76 56 9A F8 B3 9D 65 2B 47 1C AD D9 82 9D F9 22 F2 21 A0 B9 CA E6 08 61 4D 3A 7F 5E 1E 32 2F EE D1 7B B7 46 5E B6 4F 23 3D 22 BA 57 56 FB CB 26 05 D2 15 89 6C B3 54 5B 23 90 9C 61 CB 6B 45 41 0F 8D 0F 05 4F F3 13 40 25 C9 D7 7C 20 A0 85 B8 FB B1 F8 80 10 B4 B0 AB EA 18 9B D1 B1 AF 6F 9D A0 11 4A 50 32 F6 3A 29 68 83 BF AD 75 8E 7D A4 AD 36 FD 58 1A B2 44 D7 79 FB CD 2D 6C 31 14 C2 A0 0D B7 F1 C6 10 D1 8A 7F F8 A9 06 4F 38 FB EF B6 22 60 84 56 84 76 8E 6B 46 6E FA 0D AF E8 5E 4C CC F8 1B E0 06 B8 8F AE 7E 61 DD B3 B1 DE 73 40 04 8E 49 62 E8 F2 00 71 6F 2E 1F 76 FA 0F 4B 88 A1 64 E8 CB 12 80 F4 77 58 BE 60 D0 F7 99 9E 49 C2 FA 96 9D B9 74 9D D3 E1 0A 0A E1 5E A2 CA 4B 65 07 61 BF CB 49 9F 1B F5 F3 5D 94 76 8A 8E 62 12 B8 21 F5 90 0A 50 24 ED D8 D3 A9 D4 C1 D3 73 3B D5 FD D5 62 2B 95 48 1F 5C 56 86 5E 73 F7 DD 79 B2 A0 76 C0 56 35 A5 29 D4 B7 E6 8D 58 E2 BF 16 F0 ED 95 C3 6D BC F6 EF C1 8B 9C FF B6 CE 26 0A D6 F6 FB 35 3B 64 DF E7 E8 17 F9 19 0A 2B 1C EA DF 17 19 77 82 F2 03 D8 78 54 E6 98 19 CB 19 5D 49 8A 9F 87 5B 
+[0;32mI (491) main_task: Returned from app_main()[0m

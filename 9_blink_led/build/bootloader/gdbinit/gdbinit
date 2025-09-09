@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/9_blink_led/build/bootloader/gdbinit/symbols
+source /home/alejandro/esp32_projects/9_blink_led/build/bootloader/gdbinit/connect

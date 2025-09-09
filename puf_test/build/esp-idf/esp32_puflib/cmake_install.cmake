@@ -1,4 +1,4 @@
-# Install script for directory: /home/alejandro/esp32_puflib
+# Install script for directory: /home/alejandro/puf_copy/esp32_puflib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
