@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "puf_test",
-    "project_version":    "6b334da-dirty",
+    "project_version":    "6d81155-dirty",
     "project_path":       "/home/alejandro/esp32_projects/puf_test",
     "idf_path":           "/home/alejandro/esp/esp-idf",
     "build_dir":          "/home/alejandro/esp32_projects/puf_test/build",

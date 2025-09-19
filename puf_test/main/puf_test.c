@@ -67,9 +67,9 @@ void app_main(void)
 {
     puflib_init(); // needs to be called first in app_main
     
-    ESP_LOGI(TAG,"------ ENROLLMENT -------");    
-    enroll_puf(); // enrollment needs to be done only once at the beginning
-    ESP_LOGI(TAG,"********************** ENROLLMENT FINISHED **************");   
+    // ESP_LOGI(TAG,"------ ENROLLMENT -------");    
+    // enroll_puf(); // enrollment needs to be done only once at the beginning
+    // ESP_LOGI(TAG,"********************** ENROLLMENT FINISHED **************");   
 
         // condition will be true, if a PUF response is ready (useful after a restart)
         if(PUF_STATE != RESPONSE_READY) {
@@ -88,11 +88,10 @@ void app_main(void)
 
         clean_puf_response();
         ESP_LOGI(TAG,"Finishing the process\n");
-        // ESP_LOGI(TAG,"Restaring now\n");
-        // vTaskDelay(3000 / portTICK_PERIOD_MS);
-        // esp_restart();
+        ESP_LOGI(TAG,"Restaring now\n");
+        vTaskDelay(3000 / portTICK_PERIOD_MS);
+        esp_restart();
         
-
     }
 
     void RTC_IRAM_ATTR esp_wake_deep_sleep(void) {

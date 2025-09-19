@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/other_puf_testing/build/gdbinit/symbols
+source /home/alejandro/esp32_projects/other_puf_testing/build/gdbinit/connect

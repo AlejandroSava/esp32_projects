@@ -1,0 +1,28 @@
+Command: ninja all
+[1/14] Linking C static library esp-idf/spiffs/libspiffs.a
+[2/14] Linking C static library esp-idf/mqtt/libmqtt.a
+[3/14] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[4/14] Performing build step for 'bootloader'
+[1/1] cd /home/alejandro/esp32_projects/other_puf_testing/build/bootloader && /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/alejandro/esp32_projects/other_puf_testing/build/bootloader/bootloader.bin
+Bootloader binary size 0x6690 bytes. 0x970 bytes (8%) free.
+[5/14] No install step for 'bootloader'
+[6/14] Building C object esp-idf/esp32_puf_sec/CMakeFiles/__idf_esp32_puf_sec.dir/puf_measurement.c.obj
+/home/alejandro/esp32-puf-iot/components/esp32_puf_sec/puf_measurement.c: In function 'pufsleep_bit_frequency_helper':
+/home/alejandro/esp32-puf-iot/components/esp32_puf_sec/puf_measurement.c:106:34: warning: 'calloc' sizes specified with 'sizeof' in the earlier argument and not in the later argument [-Wcalloc-transposed-args]
+  106 |         puf_freq = calloc(sizeof(uint16_t), len);
+      |                                  ^~~~~~~~
+/home/alejandro/esp32-puf-iot/components/esp32_puf_sec/puf_measurement.c:106:34: note: earlier argument should specify number of elements, later size of each element
+[7/14] Completed 'bootloader'
+[8/14] Linking C static library esp-idf/esp32_puf_sec/libesp32_puf_sec.a
+[9/14] Linking C static library esp-idf/main/libmain.a
+[10/14] Generating esp-idf/esp_system/ld/sections.ld
+[11/14] Building C object CMakeFiles/other_puf_testing.elf.dir/project_elf_src_esp32.c.obj
+[12/14] Linking CXX executable other_puf_testing.elf
+[13/14] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 3 ELF sections
+Successfully created esp32 image.
+Generated /home/alejandro/esp32_projects/other_puf_testing/build/other_puf_testing.bin
+[14/14] cd /home/alejandro/esp32_projects/other_puf_testing/build && /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/alejandro/esp32_projects/other_puf_testing/build/partition_table/partition-table.bin /home/alejandro/esp32_projects/other_puf_testing/build/other_puf_testing.bin
+other_puf_testing.bin binary size 0x2fb20 bytes. Smallest app partition is 0x100000 bytes. 0xd04e0 bytes (81%) free.

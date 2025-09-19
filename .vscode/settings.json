@@ -2,6 +2,8 @@
   "C_Cpp.intelliSenseEngine": "default",
   "files.associations": {
     "freertos.h": "c",
-    "gpio.h": "c"
+    "gpio.h": "c",
+    "esp_sleep.h": "c",
+    "task.h": "c"
   }
 }

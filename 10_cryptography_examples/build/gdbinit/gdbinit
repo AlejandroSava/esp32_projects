@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/10_cryptography_examples/build/gdbinit/symbols
+source /home/alejandro/esp32_projects/10_cryptography_examples/build/gdbinit/connect
