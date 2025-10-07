@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 8d6ced44a4d390575704995cd80bde6ac26a8e29 AlejandroSava <alexandu.choric@gmail.com> 1755576812 -0600	clone: from https://github.com/AlejandroSava/esp32_projects.git
+8d6ced44a4d390575704995cd80bde6ac26a8e29 804505640195d2ab1c5cb349f446393dc726a838 AlejandroSava <alexandu.choric@gmail.com> 1755577237 -0600	commit: modifying readme and adding new paths
+804505640195d2ab1c5cb349f446393dc726a838 8bab072bbfd2c272f92beb0e5c625fe650da48c6 AlejandroSava <alexandu.choric@gmail.com> 1755611947 -0600	commit: adding new parts of the repository
+8bab072bbfd2c272f92beb0e5c625fe650da48c6 e9371bfeb47f96a55440013bd678d0a2e15aaa27 AlejandroSava <alexandu.choric@gmail.com> 1756068058 -0600	commit: adding changes to local project
+e9371bfeb47f96a55440013bd678d0a2e15aaa27 6b334da34fdc01d1bd342df8307dceaa26f11ff2 AlejandroSava <alexandu.choric@gmail.com> 1756484166 -0600	commit: adding new path to the repository
+6b334da34fdc01d1bd342df8307dceaa26f11ff2 3a474aeae78b5f614667dfa2be21c0e94003ff10 AlejandroSava <alexandu.choric@gmail.com> 1757425091 -0600	commit: adding script to compare bit by bit the puf response
+3a474aeae78b5f614667dfa2be21c0e94003ff10 6d81155cd8b5cd0e3faa1599f1cbff57e6afe7ba AlejandroSava <alexandu.choric@gmail.com> 1757685186 -0600	commit: adding changes to python script to compare the puf responses
+6d81155cd8b5cd0e3faa1599f1cbff57e6afe7ba ad125d59f013648feee0a1d0f36d3417d9c7a7a2 AlejandroSava <alexandu.choric@gmail.com> 1758306420 -0600	commit: adding local changes

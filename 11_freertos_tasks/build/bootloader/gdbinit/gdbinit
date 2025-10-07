@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/11_freertos_tasks/build/bootloader/gdbinit/symbols
+source /home/alejandro/esp32_projects/11_freertos_tasks/build/bootloader/gdbinit/connect
