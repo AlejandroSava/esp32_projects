@@ -7,8 +7,12 @@
       "includePath": [
         "${config:idf.espIdfPath}/components/**",
         "${config:idf.espIdfPathWin}/components/**",
+        "${workspaceFolder}/build/config", // line added to fix tick
         "${workspaceFolder}/**"
       ],
+
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json", // line added to fix tick
+
       "browse": {
         "path": [
           "${config:idf.espIdfPath}/components",

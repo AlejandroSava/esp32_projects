@@ -1,0 +1,2 @@
+source /home/alejandro/esp32_projects/13_gpio_output/build/gdbinit/symbols
+source /home/alejandro/esp32_projects/13_gpio_output/build/gdbinit/connect
