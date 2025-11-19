@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "13_gpio_output",
-    "project_version":    "a863d42b-dirty",
+    "project_version":    "2a0f0965-dirty",
     "project_path":       "/home/alejandro/esp32_projects/13_gpio_output",
     "idf_path":           "/home/alejandro/esp/esp-idf",
     "build_dir":          "/home/alejandro/esp32_projects/13_gpio_output/build",

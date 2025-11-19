@@ -11,7 +11,7 @@
         "${workspaceFolder}/**"
       ],
 
-      "compileCommands": "${workspaceFolder}/build/compile_commands.json", // line added to fix tick
+      
 
       "browse": {
         "path": [
@@ -20,7 +20,8 @@
           "${workspaceFolder}"
         ],
         "limitSymbolsToIncludedHeaders": true
-      }
+      },
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json" // line added to fix tick
     }
   ],
   "version": 4

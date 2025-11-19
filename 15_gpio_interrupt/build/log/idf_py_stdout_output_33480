@@ -1,0 +1,124 @@
+Command: /home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/alejandro/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/alejandro/esp32_projects/15_gpio_interrupt/build/15_gpio_interrupt.elf /home/alejandro/esp32_projects/15_gpio_interrupt/build/bootloader/bootloader.elf -m '/home/alejandro/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/alejandro/esp/esp-idf/tools/idf.py'
+4 len 00012CBC (75 KiB): IRAM
+[0;32mI (256) spi_flash: detec�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 19 2025 06:32:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09d74h ( 40308) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00019d9c vaddr=3ffb0000 size=02604h (  9732) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001c3a8 vaddr=40080000 size=03c70h ( 15472) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0ff60h ( 65376) map[0m
+[0;32mI (138) esp_image: segment 4: paddr=0002ff88 vaddr=40083c70 size=096d4h ( 38612) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=00039664 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     15_gpio_interrupt[0m
+[0;32mI (191) app_init: App version:      2a0f0965-dirty[0m
+[0;32mI (196) app_init: Compile time:     Nov 19 2025 06:32:49[0m
+[0;32mI (201) app_init: ELF file SHA256:  b0aefa6cc...[0m
+[0;32mI (205) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB2ED0 len 0002D130 (180 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008D344 len 00012CBC (75 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (262) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+STARTING ISR SERVICE
+[0;32mI (284) main_task: Returned from app_main()[0m
+GPIO 23 was pressed 0 times. The state is 1
+GPIO 23 was pressed 1 times. The state is 1
+GPIO 23 was pressed 2 times. The state is 1
+GPIO 23 was pressed 3 times. The state is 1
+GPIO 23 was pressed 4 times. The state is 0
+GPIO 23 was pressed 5 times. The state is 1
+GPIO 23 was pressed 6 times. The state is 1
+GPIO 23 was pressed 7 times. The state is 1
+GPIO 23 was pressed 8 times. The state is 1
+GPIO 23 was pressed 9 times. The state is 1
+GPIO 23 was pressed 10 times. The state is 1
+GPIO 23 was pressed 11 times. The state is 1
+GPIO 23 was pressed 12 times. The state is 1
+GPIO 23 was pressed 13 times. The state is 1
+GPIO 23 was pressed 14 times. The state is 1
+GPIO 23 was pressed 15 times. The state is 1
+GPIO 23 was pressed 16 times. The state is 1
+GPIO 23 was pressed 17 times. The state is 1
+GPIO 23 was pressed 18 times. The state is 1
+GPIO 23 was pressed 19 times. The state is 1
+GPIO 23 was pressed 20 times. The state is 1
+GPIO 23 was pressed 21 times. The state is 1
+GPIO 23 was pressed 22 times. The state is 1
+GPIO 23 was pressed 23 times. The state is 1
+GPIO 23 was pressed 24 times. The state is 1
+GPIO 23 was pressed 25 times. The state is 1
+GPIO 23 was pressed 26 times. The state is 1
+GPIO 23 was pressed 27 times. The state is 1
+GPIO 23 was pressed 28 times. The state is 1
+GPIO 23 was pressed 29 times. The state is 1
+GPIO 23 was pressed 30 times. The state is 1
+GPIO 23 was pressed 31 times. The state is 1
+GPIO 23 was pressed 32 times. The state is 1
+GPIO 23 was pressed 33 times. The state is 1
+GPIO 23 was pressed 34 times. The state is 1
+GPIO 23 was pressed 35 times. The state is 1
+GPIO 23 was pressed 36 times. The state is 1
+GPIO 23 was pressed 37 times. The state is 0
+GPIO 23 was pressed 38 times. The state is 0
+GPIO 23 was pressed 39 times. The state is 0
+GPIO 23 was pressed 40 times. The state is 1
+GPIO 23 was pressed 41 times. The state is 1
+GPIO 23 was pressed 42 times. The state is 1
+GPIO 23 was pressed 43 times. The state is 1
+GPIO 23 was pressed 44 times. The state is 1
+GPIO 23 was pressed 45 times. The state is 1
+GPIO 23 was pressed 46 times. The state is 1
+GPIO 23 was pressed 47 times. The state is 1
+GPIO 23 was pressed 48 times. The state is 1
+GPIO 23 was pressed 49 times. The state is 1
+GPIO 23 was pressed 50 times. The state is 1
+GPIO 23 was pressed 51 times. The state is 1
+GPIO 23 was pressed 52 times. The state is 1
+GPIO 23 was pressed 53 times. The state is 1
+GPIO 23 was pressed 54 times. The state is 1
+GPIO 23 was pressed 55 times. The state is 1
+GPIO 23 was pressed 56 times. The state is 1
+GPIO 23 was pressed 57 times. The state is 1
+GPIO 23 was pressed 58 times. The state is 1
+GPIO 23 was pressed 59 times. The state is 1
+GPIO 23 was pressed 60 times. The state is 1
+GPIO 23 was pressed 61 times. The state is 0
+GPIO 23 was pressed 62 times. The state is 1
